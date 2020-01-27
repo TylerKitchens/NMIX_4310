@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rzI-OR-8Xa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PictureSegue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="m27-LL-Wt3">
+                                <rect key="frame" x="100" y="187" width="214" height="268"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="nX6-13-8wk">
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gci-4Z-nxz">
+                                                <rect key="frame" x="0.0" y="2" width="101" height="96"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="101" id="3au-hJ-2es"/>
+                                                    <constraint firstAttribute="height" constant="96" id="CdH-6A-b7L"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="beachThumb"/>
+                                                <connections>
+                                                    <segue destination="eNj-Y3-GPa" kind="show" identifier="segue1" id="yCs-5E-REy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vV2-aC-DUV">
+                                                <rect key="frame" x="131" y="0.0" width="83" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="83" id="RES-FP-ygw"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="bigboyThumb"/>
+                                                <connections>
+                                                    <segue destination="eNj-Y3-GPa" kind="show" identifier="segue2" id="MM5-BA-KI3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="vt9-xJ-hKs">
+                                        <rect key="frame" x="0.0" y="150" width="214" height="118"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ier-s1-bpV">
+                                                <rect key="frame" x="0.0" y="0.0" width="103" height="118"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="103" id="iro-I5-Uax"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="butterflyThumb"/>
+                                                <connections>
+                                                    <segue destination="eNj-Y3-GPa" kind="show" identifier="segue3" id="IIB-xO-Uyn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwf-Z3-6GO">
+                                                <rect key="frame" x="133" y="10.5" width="81" height="97"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="97" id="KMg-3d-wot"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="treeThumb"/>
+                                                <connections>
+                                                    <segue destination="eNj-Y3-GPa" kind="show" identifier="segue4" id="dJ3-AP-fKo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="atf-sV-PbU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Display Pix-->
+        <scene sceneID="H8B-Is-li0">
+            <objects>
+                <viewController id="eNj-Y3-GPa" customClass="displayPix" customModule="PictureSegue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eD8-ul-2dC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zD9-wv-ajx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="D8a-z9-xYI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RVt-FN-aRe"/>
+                    <connections>
+                        <outlet property="imgView" destination="zD9-wv-ajx" id="cQC-5i-hUb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DVE-sQ-hgP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813.0434782608697" y="134.59821428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lPi-5K-Igr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rzI-OR-8Xa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dr8-pS-RyM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uwh-L1-vkH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2b-tB-JbB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="beachThumb" width="100" height="93"/>
+        <image name="bigboyThumb" width="83" height="100"/>
+        <image name="butterflyThumb" width="200" height="118"/>
+        <image name="treeThumb" width="200" height="150"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dJ3-AP-fKo"/>
+    </inferredMetricsTieBreakers>
+</document>
