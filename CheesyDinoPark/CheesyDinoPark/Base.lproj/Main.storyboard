@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CheesyDinoPark" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmO-Y7-ghc">
+                                <rect key="frame" x="46" y="266" width="152" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="kah-mT-qeZ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="dino1Button"/>
+                                <connections>
+                                    <segue destination="x4u-gA-NJP" kind="show" id="Kge-x1-E5a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tl6-Ja-hun">
+                                <rect key="frame" x="231" y="266" width="152" height="113"/>
+                                <state key="normal" title="Button" image="dino2Button"/>
+                                <connections>
+                                    <segue destination="mY9-N7-Tjg" kind="show" id="ea3-6w-ZiH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lP-FS-qT4">
+                                <rect key="frame" x="231" y="433" width="111" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="hiD-Oj-Mdw"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="mamutButton"/>
+                                <connections>
+                                    <segue destination="A6R-Rf-FXB" kind="show" id="D7h-Ec-1gX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoO-3p-bt0">
+                                <rect key="frame" x="64" y="433" width="116" height="113"/>
+                                <state key="normal" title="Button" image="dino3Button"/>
+                                <connections>
+                                    <segue destination="1wJ-yG-qMW" kind="show" id="1jQ-Qd-DF0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HoO-3p-bt0" firstAttribute="top" secondItem="dmO-Y7-ghc" secondAttribute="bottom" constant="54" id="46l-eM-QKB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HoO-3p-bt0" secondAttribute="bottom" constant="262" id="8Eu-AW-HU2"/>
+                            <constraint firstItem="HoO-3p-bt0" firstAttribute="firstBaseline" secondItem="1lP-FS-qT4" secondAttribute="firstBaseline" id="BGV-SF-gfc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1lP-FS-qT4" secondAttribute="trailing" constant="72" id="FfN-yq-Dzw"/>
+                            <constraint firstItem="HoO-3p-bt0" firstAttribute="baseline" secondItem="1lP-FS-qT4" secondAttribute="baseline" id="IiD-YO-Mxm"/>
+                            <constraint firstItem="HoO-3p-bt0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="Qev-6v-7PN"/>
+                            <constraint firstItem="dmO-Y7-ghc" firstAttribute="centerX" secondItem="HoO-3p-bt0" secondAttribute="centerX" id="VGh-Nk-p6P"/>
+                            <constraint firstItem="dmO-Y7-ghc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="266" id="YQi-5b-Fhw"/>
+                            <constraint firstItem="tl6-Ja-hun" firstAttribute="leading" secondItem="dmO-Y7-ghc" secondAttribute="trailing" constant="33" id="aij-er-ygJ"/>
+                            <constraint firstItem="HoO-3p-bt0" firstAttribute="top" secondItem="1lP-FS-qT4" secondAttribute="top" id="d3Q-U0-xFJ"/>
+                            <constraint firstItem="dmO-Y7-ghc" firstAttribute="baseline" secondItem="tl6-Ja-hun" secondAttribute="baseline" id="ohD-ms-rFp"/>
+                            <constraint firstItem="dmO-Y7-ghc" firstAttribute="firstBaseline" secondItem="tl6-Ja-hun" secondAttribute="firstBaseline" id="paR-qL-BwG"/>
+                            <constraint firstItem="dmO-Y7-ghc" firstAttribute="top" secondItem="tl6-Ja-hun" secondAttribute="top" id="qy7-wB-5ed"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tl6-Ja-hun" secondAttribute="trailing" constant="31" id="r8B-Ok-xvm"/>
+                            <constraint firstItem="tl6-Ja-hun" firstAttribute="leading" secondItem="1lP-FS-qT4" secondAttribute="leading" id="tMf-yI-gX1"/>
+                            <constraint firstItem="dmO-Y7-ghc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="xBt-wi-QJl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9pb-V8-kBm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-567" y="590"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Lne-oC-VoY">
+            <objects>
+                <viewController id="mY9-N7-Tjg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q1u-Mj-G3q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9q-LF-eqt">
+                                <rect key="frame" x="-120" y="48" width="654" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="dino2"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="0AI-th-Bie"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gaj-qK-Hw1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SQX-hu-wWM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zna-8n-V5z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="320" y="175"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jbT-ut-s5a">
+            <objects>
+                <viewController id="1wJ-yG-qMW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="klL-5c-ZfG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsT-TU-Hkc">
+                                <rect key="frame" x="-120" y="48" width="654" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="dino3"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="EL1-8Y-qSN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="QMF-Vi-7nV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="H2C-lk-anf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LbT-aN-Aiw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="857"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YBz-WX-09z">
+            <objects>
+                <viewController id="x4u-gA-NJP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GAk-NA-U3M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcf-sj-VbG">
+                                <rect key="frame" x="-220" y="148" width="854" height="600"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="dino1"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="F9I-Z6-bfU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ocO-EL-u6c"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dw6-er-e4S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIa-WC-lrX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318.84057971014494" y="-488.16964285714283"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="116-g1-NPb">
+            <objects>
+                <viewController id="A6R-Rf-FXB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bXm-G2-7n9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uE-gz-hBM">
+                                <rect key="frame" x="-120" y="48" width="654" height="800"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mamut"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="uFz-dO-Rve"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="v8H-lZ-Yxa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cAl-U7-DzN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uQj-Ok-EiN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="1524"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dino1" width="800" height="600"/>
+        <image name="dino1Button" width="150" height="113"/>
+        <image name="dino2" width="600" height="800"/>
+        <image name="dino2Button" width="113" height="150"/>
+        <image name="dino3" width="600" height="800"/>
+        <image name="dino3Button" width="113" height="150"/>
+        <image name="mamut" width="600" height="800"/>
+        <image name="mamutButton" width="113" height="150"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uFz-dO-Rve"/>
+    </inferredMetricsTieBreakers>
+</document>
